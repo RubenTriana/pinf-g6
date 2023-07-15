@@ -41,16 +41,12 @@ export const Form2 = () => {
         });
   };
 
-  
-
-  
-
   return (
-    <div  name='contact' class="container-fluid contentForm pt-5 mt-5 pb-5 ">
-      <div class="row py-5 my-5">
-        <div class="col colForm p-5 mx-4">
-          <h2 class="form-title">Contacta</h2>
-          <h2 class="subtittle-title pb-3">con nosotros</h2>
+    <div  nameName='contact' class="container-fluid contentForm pt-5 mt-5 pb-5 ">
+      <div className="row py-5 my-5">
+        <div className="col colForm p-5 mx-4">
+          <h2 className="form-title">Contacta</h2>
+          <h2 className="subtittle-title pb-3">con nosotros</h2>
           <form className="formulary w-100" onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-2">
               <label htmlFor="InputName" className="form-label">
@@ -77,7 +73,7 @@ export const Form2 = () => {
                 autoComplete="off"
                 {...register("correo")}
               />
-              <p className="error"> {errors.email?.message}</p>
+              <p className="error"> {errors.correo?.message}</p>
             </div>
             <div className="mb-2">
               <label htmlFor="InputPhone" className="form-label">
@@ -114,7 +110,7 @@ export const Form2 = () => {
             </button>
           </form>
         </div>
-        <div class="col-md-6  d-flex align-items-center justify-content-center p-5">
+        <div className="col-md-6  d-flex align-items-center justify-content-center p-5">
           <img
             class="imageForm img-fluid"
             src={formIma}
