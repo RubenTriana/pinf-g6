@@ -42,7 +42,7 @@ export const Form2 = () => {
   };
 
   return (
-    <div  nameName='contact' class="container-fluid contentForm pt-5 mt-5 pb-5 ">
+    <div  className='contact' class="container-fluid contentForm pt-5 mt-5 pb-5 ">
       <div className="row py-5 my-5">
         <div className="col colForm p-5 mx-4">
           <h2 className="form-title">Contacta</h2>
