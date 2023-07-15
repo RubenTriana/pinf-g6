@@ -32,7 +32,7 @@ export const Form2 = () => {
 /*conexión a base de datos*/
   const onSubmit = (data) => {
     console.log(data);
-    axios.post('https://pinfsg6back-app-production.up.railway.app/api/registrapersona', data)
+    axios.post('https://back-app-production.up.railway.app/api/registrapersona', data)
         .then((response) => {
             console.log(response);
         })
