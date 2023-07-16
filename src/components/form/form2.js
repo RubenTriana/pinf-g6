@@ -24,6 +24,9 @@ export const Form2 = () => {
       .positive()
       .integer()
       .required("Phone number is required"),
+    mensaje: yup
+      .string()
+      .required("El comentario es requerido"),
   });
 
   const { register, handleSubmit, formState: {errors} } = useForm({
@@ -42,7 +45,7 @@ export const Form2 = () => {
   };
 
   return (
-    <div  className='contact' class="container-fluid contentForm pt-5 mt-5 pb-5 ">
+    <div className='contact container-fluid contentForm pt-5 mt-5 pb-5 '>
       <div className="row py-5 my-5">
         <div className="col colForm p-5 mx-4">
           <h2 className="form-title">Contacta</h2>
@@ -102,17 +105,18 @@ export const Form2 = () => {
               />
             </div>
 
-            <button id="register" type="submit" className=" btn  btn-success">
+            <button id="register-btn" type="submit" className="btn btn-success">
               Registro
             </button>
-            <button id="register" type="reset" className=" btn  btn-danger m-3">
+            <button id="reset-btn" type="reset" className="btn btn-danger m-3">
               Reset
             </button>
+
           </form>
         </div>
         <div className="col-md-6  d-flex align-items-center justify-content-center p-5">
           <img
-            class="imageForm img-fluid"
+            className="imageForm img-fluid"
             src={formIma}
             alt="Imagen de formulario"
           />
