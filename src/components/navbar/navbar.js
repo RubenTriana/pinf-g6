@@ -11,11 +11,11 @@ function Navbar() {
       <a href="/" className="ms-4"><img className="w-50" src={Nlogo} alt="NLogo" /></a>
       <div className={NavExpanded ? "navbar-menu expanded" : "navbar-menu"}>
         <ul>
-          <li><a href="/home"><Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={50}>Inicio</Link></a></li>
-          <li><a href="/about"><Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={50}>Nosotros</Link></a></li>
-          <li><a href="/contact"><Link activeClass="active" to="products" spy={true} smooth={true} offset={50} duration={50}>Colección</Link></a></li>
-          <li><a href="/contact"><Link activeClass="active" to="services" spy={true} smooth={true} offset={50} duration={50}>Beneficios</Link></a></li>
-          <li><a href="/contact"><Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={50}>Contáctanos</Link></a></li>
+          <li><Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>Inicio</Link></li>
+          <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>Nosotros</Link></li>
+          <li><Link activeClass="active" to="products" spy={true} smooth={true} offset={50} duration={500}>Colección</Link></li>
+          <li><Link activeClass="active" to="services" spy={true} smooth={true} offset={50} duration={500}>Beneficios</Link></li>
+          <li><Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500}>Contáctanos</Link></li>
         </ul>
       </div>
       <button className="hamburger" onClick={() => { setNavExpanded(!NavExpanded); }}>
